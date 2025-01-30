@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/09cd5334d6.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Daisy UI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.2/daisyui.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="shortcut icon"
+      href="./images/slider/bike2.png"
+      type="image/x-icon"
+    />
+    <title>Nature's Platter</title>
+    <!-- Custom CSS -->
+    <style>
+      .font-sora {
+        font-family: "Sora", serif;
+        color: #111111;
+      }
+      button,
+      li,
+      a {
+        cursor: pointer;
+      }
+      nav {
+        border-bottom: 1px solid #179800;
+      }
+      .primary-color {
+        color: #179800;
+      }
+      .primary-bg {
+        background-color: #179800;
+      }
+      .secondary-bg {
+        background-color: #efebe3;
+      }
+      .primary-bg:hover {
+        background-color: #e43008;
+      }
+      .light-bg {
+        background-color: rgba(231, 111, 81, 0.1);
+      }
+      .outline-button {
+        border: 1px solid #179800;
+        color: #179800;
+      }
+      .outline-button:hover {
+        background-color: #179800;
+        color: #ffffff;
+      }
+    </style>
+  </head>
+  <body class="font-sora">
+    <header class="bg-gradient-to-t from-[#ebe4d6] to-white">
+      <!-- Navbar -->
+      <nav
+        class="max-w-screen-xl mx-auto px-4 md:p-4 flex justify-between items-center md:border-none"
+      >
+        <div class="navbar">
+          <div class="navbar-start">
+            <a>
+              <img
+                class="hidden md:block h-10"
+                src="./assets/logo-header.png"
+                alt=""
+              />
+              <img
+                class="block md:hidden"
+                src="./assets/logo-header-m.png"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="navbar-center hidden md:flex">
+            <ul class="menu menu-horizontal px-1 text-lg space-x-2">
+              <li>
+                <a class="hover:bg-green-600 hover:text-white">Product</a>
+              </li>
+              <li>
+                <a class="hover:bg-green-600 hover:text-white">Sarvices</a>
+              </li>
+              <li>
+                <a class="hover:bg-green-600 hover:text-white">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-end hidden md:flex items-center space-x-2">
+            <div>
+              <a class="text-lg px-1 text-green-600 hover:text-orange-600"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></a>
+              <a class="text-lg px-3 text-green-600 hover:text-orange-600"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></a>
+              <a class="btn bg-transparent outline-button px-6 py-4">Login</a>
+              <a class="btn primary-bg text-white px-6 py-5">Register</a>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost md:hidden">
+            <i class="fa-solid fa-bars text-green-700 text-xl"></i>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow right-2 space-y-2"
+          >
+            <li><a>Product</a></li>
+            <li><a>Sarvices</a></li>
+            <li><a>Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Header Content -->
+      <section
+        class="max-w-screen-xl mx-auto px-4 flex flex-col justify-center items-center text-center mt-10"
+      >
+        <h1 class="text-3xl md:text-5xl font-bold">
+          Freshness
+          <span class="primary-color"
+            >You Can <br />
+            Count</span
+          >
+          On, Prices You’ll Love!
+        </h1>
+        <p class="mt-4 md:mt-8 text-sm md:text-lg w-full md:w-1/2 mb-6">
+          Shop your daily essentials at unbeatable prices. From fresh produce to
+          pantry staples, we’ve got you covered every day!
+        </p>
+        <img
+          class="w-11/12 mx-auto"
+          src="./assets/hero-vegetables.png"
+          alt=""
+        />
+      </section>
+    </header>
+  </body>
+</html>
