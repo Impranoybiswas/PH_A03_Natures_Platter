@@ -25,7 +25,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="shortcut icon"
-      href="./images/slider/bike2.png"
+      href="./assets/logo-header-m.png"
       type="image/x-icon"
     />
     <title>Nature's Platter</title>
@@ -46,18 +46,19 @@
       .primary-color {
         color: #179800;
       }
-      .primary-bg {
+      .primary-button {
         background-color: #179800;
+        border: 1px solid #179800;
+      }
+
+      .primary-button:hover {
+        background-color: #e43008;
+        border: 1px solid #e43008;
       }
       .secondary-bg {
         background-color: #efebe3;
       }
-      .primary-bg:hover {
-        background-color: #e43008;
-      }
-      .light-bg {
-        background-color: rgba(231, 111, 81, 0.1);
-      }
+
       .outline-button {
         border: 1px solid #179800;
         color: #179800;
@@ -102,16 +103,16 @@
               </li>
             </ul>
           </div>
-          <div class="navbar-end hidden md:flex items-center space-x-2">
-            <div>
-              <a class="text-lg px-1 text-green-600 hover:text-orange-600"
+          <div class="navbar-end hidden md:flex items-center">
+            <div class="flex items-center space-x-3">
+              <a class="text-lg text-green-600 hover:text-orange-600"
                 ><i class="fa-solid fa-magnifying-glass"></i
               ></a>
-              <a class="text-lg px-3 text-green-600 hover:text-orange-600"
+              <a class="text-lg text-green-600 hover:text-orange-600"
                 ><i class="fa-solid fa-cart-shopping"></i
               ></a>
-              <a class="btn bg-transparent outline-button px-6 py-4">Login</a>
-              <a class="btn primary-bg text-white px-6 py-5">Register</a>
+              <a class="btn bg-transparent outline-button px-4 h-8">Login</a>
+              <a class="btn primary-button text-white px-4 h-8">Register</a>
             </div>
           </div>
         </div>
@@ -152,5 +153,257 @@
         />
       </section>
     </header>
+    <!-- Services -->
+    <section
+      class="max-w-screen-xl mx-auto px-4 flex flex-col justify-center mt-16 md:mt-28 text-center md:text-left"
+    >
+      <h2 class="text-2xl md:text-3xl font-medium text-green-600 mb-5">
+        Services
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+        <div class="card secondary-bg w-4/5 md:w-full mx-auto shadow-sm">
+          <figure class="w-30 mx-auto bg-white p-5 rounded-full mt-8">
+            <img class="" src="./assets/service.png" alt="Services" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">24/7 Services</h2>
+            <p>
+              Here are some 24/7 services that can help with mental health,
+              eating disorders, and substance use disorders
+            </p>
+          </div>
+        </div>
+        <div class="card secondary-bg w-4/5 md:w-full mx-auto shadow-sm">
+          <figure class="w-30 mx-auto bg-white p-5 rounded-full mt-8">
+            <img class="" src="./assets/delivery.png" alt="Services" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Fast Delivery</h2>
+            <p>
+              Hungry? Get your food delivered fast! Order now and enjoy a
+              delicious meal in minutes.
+            </p>
+          </div>
+        </div>
+        <div class="card secondary-bg w-4/5 md:w-full mx-auto shadow-sm">
+          <figure class="w-30 mx-auto bg-white p-5 rounded-full mt-8">
+            <img class="" src="./assets/healthy.png" alt="Services" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Healthy Services</h2>
+            <p>
+              We provides personalized text messages on health topics, including
+              food for young children and infants.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services -->
+    <div class="secondary-bg mt-16 md:mt-28">
+      <section
+        class="max-w-screen-xl mx-auto py-28 flex flex-col justify-center text-center md:text-left"
+      >
+        <h2 class="text-2xl md:text-3xl font-medium text-green-600 mb-5">
+          Popular Products
+        </h2>
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 px-2 md:px-0"
+        >
+          <div class="bg-green-700 rounded-lg">hello</div>
+          <div
+            class="md:col-span-2 grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-6"
+          >
+            <div
+              class="flex p-2 gap-2 md:gap-4 bg-slate-100 items-center justify-start rounded-lg"
+            >
+              <figure
+                class="secondary-bg rounded-lg flex justify-center items-center min-h-16 min-w-16 md:min-h-24 md:min-w-24"
+              >
+                <img class="w-full" src="./assets/small_card1.png" alt="" />
+              </figure>
+              <div class="text-left text-sm md:text-lg">
+                <span
+                  ><i class="fa-solid fa-star text-yellow-500"></i> 4.5</span
+                >
+                <h2 class="font-bold">Onion</h2>
+                <span class="text-xs md:text-lg"
+                  >1KG
+                  <span class="text-green-600 font-bold bottom-4">|</span>
+                  &#2547;60.89</span
+                >
+              </div>
+            </div>
+
+            <div
+              class="flex p-2 gap-2 md:gap-4 bg-slate-100 items-center justify-start rounded-lg"
+            >
+              <figure
+                class="secondary-bg rounded-lg flex justify-center items-center min-h-16 min-w-16 md:min-h-24 md:min-w-24"
+              >
+                <img class="w-full" src="./assets/small_card1.png" alt="" />
+              </figure>
+              <div class="text-left text-sm md:text-lg">
+                <span
+                  ><i class="fa-solid fa-star text-yellow-500"></i> 4.5</span
+                >
+                <h2 class="font-bold">Onion</h2>
+                <span class="text-xs md:text-lg"
+                  >500g
+                  <span class="text-green-600 font-bold bottom-4">|</span>
+                  &#2547;30</span
+                >
+              </div>
+            </div>
+
+            <div
+              class="flex p-2 gap-2 md:gap-4 bg-slate-100 items-center justify-start rounded-lg"
+            >
+              <figure
+                class="secondary-bg rounded-lg flex justify-center items-center min-h-16 min-w-16 md:min-h-24 md:min-w-24"
+              >
+                <img class="w-full" src="./assets/small_card1.png" alt="" />
+              </figure>
+              <div class="text-left text-sm md:text-lg">
+                <span
+                  ><i class="fa-solid fa-star text-yellow-500"></i> 4.5</span
+                >
+                <h2 class="font-bold">Onion</h2>
+                <span class="text-xs md:text-lg"
+                  >1kg
+                  <span class="text-green-600 font-bold bottom-4">|</span>
+                  &#2547;60.89</span
+                >
+              </div>
+            </div>
+
+            <div
+              class="flex p-2 gap-2 md:gap-4 bg-slate-100 items-center justify-start rounded-lg"
+            >
+              <figure
+                class="secondary-bg rounded-lg flex justify-center items-center min-h-16 min-w-16 md:min-h-24 md:min-w-24"
+              >
+                <img class="w-full" src="./assets/small_card1.png" alt="" />
+              </figure>
+              <div class="text-left text-sm md:text-lg">
+                <span
+                  ><i class="fa-solid fa-star text-yellow-500"></i> 4.5</span
+                >
+                <h2 class="font-bold">Onion</h2>
+                <span class="text-xs md:text-lg"
+                  >1kg
+                  <span class="text-green-600 font-bold bottom-4">|</span>
+                  &#2547;60.89</span
+                >
+              </div>
+            </div>
+            <div
+              class="flex p-2 gap-2 md:gap-4 bg-slate-100 items-center justify-start rounded-lg"
+            >
+              <figure
+                class="secondary-bg rounded-lg flex justify-center items-center min-h-16 min-w-16 md:min-h-24 md:min-w-24"
+              >
+                <img class="w-full" src="./assets/small_card1.png" alt="" />
+              </figure>
+              <div class="text-left text-sm md:text-lg">
+                <span
+                  ><i class="fa-solid fa-star text-yellow-500"></i> 4.5</span
+                >
+                <h2 class="font-bold">Onion</h2>
+                <span class="text-xs md:text-lg"
+                  >1kg
+                  <span class="text-green-600 font-bold bottom-4">|</span>
+                  &#2547;60.89</span
+                >
+              </div>
+            </div>
+
+            <div
+              class="flex p-2 gap-2 md:gap-4 bg-slate-100 items-center justify-start rounded-lg"
+            >
+              <figure
+                class="secondary-bg rounded-lg flex justify-center items-center min-h-16 min-w-16 md:min-h-24 md:min-w-24"
+              >
+                <img class="w-full" src="./assets/small_card1.png" alt="" />
+              </figure>
+              <div class="text-left text-sm md:text-lg">
+                <span
+                  ><i class="fa-solid fa-star text-yellow-500"></i> 4.5</span
+                >
+                <h2 class="font-bold">Onion</h2>
+                <span class="text-xs md:text-lg"
+                  >1kg
+                  <span class="text-green-600 font-bold bottom-4">|</span>
+                  &#2547;60.89</span
+                >
+              </div>
+            </div>
+
+            <div
+              class="flex p-2 gap-2 md:gap-4 bg-slate-100 items-center justify-start rounded-lg"
+            >
+              <figure
+                class="secondary-bg rounded-lg flex justify-center items-center min-h-16 min-w-16 md:min-h-24 md:min-w-24"
+              >
+                <img class="w-full" src="./assets/small_card1.png" alt="" />
+              </figure>
+              <div class="text-left text-sm md:text-lg">
+                <span
+                  ><i class="fa-solid fa-star text-yellow-500"></i> 4.5</span
+                >
+                <h2 class="font-bold">Onion</h2>
+                <span class="text-xs md:text-lg"
+                  >1kg
+                  <span class="text-green-600 font-bold bottom-4">|</span>
+                  &#2547;60.89</span
+                >
+              </div>
+            </div>
+
+            <div
+              class="flex p-2 gap-2 md:gap-4 bg-slate-100 items-center justify-start rounded-lg"
+            >
+              <figure
+                class="secondary-bg rounded-lg flex justify-center items-center min-h-16 min-w-16 md:min-h-24 md:min-w-24"
+              >
+                <img class="w-full" src="./assets/small_card1.png" alt="" />
+              </figure>
+              <div class="text-left text-sm md:text-lg">
+                <span
+                  ><i class="fa-solid fa-star text-yellow-500"></i> 4.5</span
+                >
+                <h2 class="font-bold">Onion</h2>
+                <span class="text-xs md:text-lg"
+                  >1kg
+                  <span class="text-green-600 font-bold bottom-4">|</span>
+                  &#2547;60.89</span
+                >
+              </div>
+            </div>
+
+            <div
+              class="flex p-2 gap-2 md:gap-4 bg-slate-100 items-center justify-start rounded-lg"
+            >
+              <figure
+                class="secondary-bg rounded-lg flex justify-center items-center min-h-16 min-w-16 md:min-h-24 md:min-w-24"
+              >
+                <img class="w-full" src="./assets/small_card1.png" alt="" />
+              </figure>
+              <div class="text-left text-sm md:text-lg">
+                <span
+                  ><i class="fa-solid fa-star text-yellow-500"></i> 4.5</span
+                >
+                <h2 class="font-bold">Onion</h2>
+                <span class="text-xs md:text-lg"
+                  >1kg
+                  <span class="text-green-600 font-bold bottom-4">|</span>
+                  &#2547;60.89</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
   </body>
 </html>
