@@ -460,7 +460,9 @@
         <div class="space-y-4">
           <img class="w-72 mx-auto" src="./assets/big_card2.png" alt="" />
           <h2 class="text-xl font-medium text-center">Chooce Your Pakages</h2>
-          <div class="flex flex-wrap justify-center gap-4 md:gap-2 lg:gap-6">
+          <div
+            class="grid grid-cols-[1fr,1fr] md:grid-cols-[1fr,1fr,1fr,1fr] justify-center gap-4 md:gap-2 lg:gap-6"
+          >
             <div
               class="bg-white shadow-md p-2 md:p-2 lg:p-4 rounded-md space-y-4 text-center"
             >
@@ -481,10 +483,12 @@
             >
               <h3 class="text-lg font-bold">Set - 1</h3>
               <div class="flex justify-between gap-6 md:gap-10">
-                <div class="text-sm">Poteto <br />Onion <br />Brinjal</div>
-                <div class="text-sm">3KG <br />2KG <br />1KG</div>
+                <div class="text-sm text-left">
+                  Garlic <br />Onion <br />Brinjal
+                </div>
+                <div class="text-sm text-right">3KG <br />2KG <br />1KG</div>
               </div>
-              <h3 class="font-bold text-yellow-600">&#2547;200</h3>
+              <h3 class="font-bold text-yellow-600">&#2547;280</h3>
               <button
                 class="btn bg-orange-300 text-orange-800 hover:bg-green-600 hover:text-white mt-2"
               >
@@ -496,10 +500,12 @@
             >
               <h3 class="text-lg font-bold">Set - 1</h3>
               <div class="flex justify-between gap-6 md:gap-10">
-                <div class="text-sm">Poteto <br />Onion <br />Brinjal</div>
-                <div class="text-sm">3KG <br />2KG <br />1KG</div>
+                <div class="text-sm text-left">
+                  Tometo <br />Onion <br />Muli
+                </div>
+                <div class="text-sm text-right">3KG <br />2KG <br />1KG</div>
               </div>
-              <h3 class="font-bold text-yellow-600">&#2547;200</h3>
+              <h3 class="font-bold text-yellow-600">&#2547;230</h3>
               <button
                 class="btn bg-orange-300 text-orange-800 hover:bg-green-600 hover:text-white mt-2"
               >
@@ -511,8 +517,10 @@
             >
               <h3 class="text-lg font-bold">Set - 1</h3>
               <div class="flex justify-between gap-6 md:gap-10">
-                <div class="text-sm">Poteto <br />Onion <br />Brinjal</div>
-                <div class="text-sm">3KG <br />2KG <br />1KG</div>
+                <div class="text-sm text-left">
+                  Cucomber <br />Onion <br />Brinjal
+                </div>
+                <div class="text-sm text-right">3KG <br />2KG <br />1KG</div>
               </div>
               <h3 class="font-bold text-yellow-600">&#2547;200</h3>
               <button
@@ -538,61 +546,64 @@
 
       <div class="grid grid-cols-1 md:grid-cols-[auto,40%] gap-4 md:gap-6">
         <div
-          class="bg-[#115414] rounded-xl p-5 flex flex-col md:flex-row-reverse items-center justify-center md:justify-between text-white"
+          class="bg-[#115414] rounded-xl p-5 grid grid-cols-[auto,40%] items-center justify-between gap-2 text-white"
         >
+          <div class="space-y-4 md:space-y-6 mt-5 text-center md:pl-8">
+            <img
+              class="w-4/5 md:w-full mx-auto"
+              src="./assets/dawat-logo.png"
+              alt=""
+            />
+            <button
+              class="text-sm md:text-xl bg-green-600 py-2 px-4 rounded-md hover:bg-orange-600"
+            >
+              Cook Exotic Dishes
+            </button>
+            <h2 class="text-lg md:text-4xl">
+              Up to <span class="font-bold">20% Off</span>
+            </h2>
+          </div>
           <figure>
             <img
-              class="mx-auto w-5/5"
+              class="mx-auto w-full"
               src="./assets/dawat-mock-up.png"
               alt=""
             />
           </figure>
-          <div class="space-y-4 md:space-y-6 mt-5 text-center md:pl-8">
-            <img class="mx-auto" src="./assets/dawat-logo.png" alt="" />
-            <button
-              class="text-lg md:text-xl bg-green-600 py-2 px-4 rounded-md hover:bg-orange-600"
-            >
-              Cook Exotic Dishes
-            </button>
-            <h2 class="text-2xl md:text-4xl">
-              Up to <span class="font-bold">20% Off</span>
-            </h2>
-          </div>
         </div>
 
         <div
-          class="bg-[#2A4D97] rounded-xl p-5 flex flex-col md:flex-row-reverse items-center justify-center md:justify-between text-white"
+          class="bg-[#2A4D97] rounded-xl p-5 grid grid-cols-[auto,40%] items-center justify-between gap-2 text-white"
         >
+          <div class="space-y-3 md:space-y-6 mt-5 text-center md:pl-8">
+            <img
+              class="h-4/5 mx-auto"
+              src="./assets/india-gate-logo.png"
+              alt=""
+            />
+            <button
+              class="text-sm md:text-xl bg-blue-500 py-2 px-4 rounded-md hover:bg-orange-600"
+            >
+              World No.1 Rice
+            </button>
+            <h2 class="text-lg md:text-3xl">
+              Up to <span class="font-bold">25% Off</span>
+            </h2>
+          </div>
           <figure>
             <img
-              class="mx-auto w-5/5"
+              class="mx-auto w-full"
               src="./assets/india-gate-mock-up.png"
               alt=""
             />
           </figure>
-          <div
-            class="space-y-4 md:space-y-6 mt-5 justify-center items-center md:pl-4 flex flex-row md:flex-col"
-          >
-            <img class="mx-auto" src="./assets/india-gate-logo.png" alt="" />
-            <div class="space-y-4 text-center">
-              <button
-                class="text-lg md:text-xl bg-blue-500 py-2 px-4 rounded-md hover:bg-orange-600"
-              >
-                World No.1 Rice
-              </button>
-              <h2 class="text-2xl md:text-3xl">
-                Up to <span class="font-bold">20% Off</span>
-              </h2>
-            </div>
-          </div>
         </div>
       </div>
     </section>
     <!-- Float Section -->
     <section class="relative z-10">
-
-<div class="bg-transparent h-96 md:h-60 lg:h-64"></div>
-<div class="bg-[#179800] h-96 md:h-60  lg:h-64"></div>
+      <div class="bg-transparent h-80 md:h-60 lg:h-64"></div>
+      <div class="bg-[#179800] h-80 md:h-60 lg:h-64"></div>
 
       <div class="absolute w-full top-20 z-1">
         <section
@@ -627,43 +638,58 @@
       </div>
     </section>
     <!-- Footer -->
-    <footer
-      class=" bg-[#179800] flex"
-    >
+    <footer class="bg-[#179800] flex">
       <!-- Footer Content -->
-      
-        <section
-          class="max-w-screen-xl mx-auto text-white grid grid-cols-1 md:grid-cols-3 justify-between gap-5 md:gap-24 mb-14 mt-20 md:px-8"
+
+      <section
+        class="max-w-screen-xl mx-auto text-white grid grid-cols-1 md:grid-cols-3 justify-between gap-5 md:gap-24 m-16 md:px-8"
+      >
+        <div
+          class="text-white flex flex-col items-center md:items-start justify-start text-center md:text-left gap-4"
         >
-          <div
-            class="text-white flex flex-col items-center md:items-start justify-start text-center md:text-left gap-4"
+          <img src="./assets/logo-footer.png" alt="" />
+          <p class="text-sm md:text-lg px-4 md:px-0">
+            Discover a world of treats, toys & essentials handpicked for your
+            furry Friends and Family.
+          </p>
+        </div>
+        <div>
+          <ul
+            class="flex flex-col items-center md:items-start justify-start gap-2"
           >
-            <img src="./assets/logo-footer.png" alt="" />
-            <p class="text-sm md:text-lg px-4 md:px-0">
-              Discover a world of treats, toys & essentials handpicked for your
-              furry Friends and Family.
-            </p>
-          </div>
-          <div>
-            <ul
-              class="flex flex-col items-center md:items-start justify-start gap-2"
+            <li>Products</li>
+            <li>Secvice</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+        <div class="text-center space-y-4">
+          <h3>Follow Us</h3>
+          <ul
+            class="flex flex-row items-center md:items-start justify-center gap-2"
+          >
+            <li
+              class="flex justify-center items-center h-8 w-8 bg-green-800 rounded-md hover:bg-orange-600"
             >
-              <li>Products</li>
-              <li>Secvice</li>
-              <li>Contact Us</li>
-            </ul>
-          </div>
-          <div>
-            <ul
-              class="flex flex-col items-center md:items-start justify-start gap-2"
+              <i class="fa-brands fa-facebook-f"></i>
+            </li>
+            <li
+              class="flex justify-center items-center h-8 w-8 bg-green-800 rounded-md hover:bg-orange-600"
             >
-              <li>Products</li>
-              <li>Secvice</li>
-              <li>Contact Us</li>
-            </ul>
-          </div>
-        </section>
-      
+              <i class="fa-brands fa-instagram"></i>
+            </li>
+            <li
+              class="flex justify-center items-center h-8 w-8 bg-green-800 rounded-md hover:bg-orange-600"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </li>
+            <li
+              class="flex justify-center items-center h-8 w-8 bg-green-800 rounded-md hover:bg-orange-600"
+            >
+              <i class="fa-brands fa-youtube"></i>
+            </li>
+          </ul>
+        </div>
+      </section>
     </footer>
   </body>
 </html>
