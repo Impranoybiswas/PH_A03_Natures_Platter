@@ -67,10 +67,44 @@
         background-color: #179800;
         color: #ffffff;
       }
+      @keyframes animateInHeadText {
+        0% {
+          color: #179800;
+        }
+        25% {
+          color: #e85d75;
+        }
+        50% {
+          color: #11b8e6;
+        }
+        75% {
+          color: #5ae241;
+        }
+        100% {
+          color: #179800;
+        }
+      }
+      .animate-in-header {
+        animation: animateInHeadText 6s ease 0.5s infinite normal;
+      }
+      @keyframes animateInHeadImage {
+        0% {
+          transform: translate(0px, 120px) scale(1);
+        }
+        50% {
+          transform: translate(0px, 50px) scale(1.2);
+        }
+        100% {
+          transform: translate(0px, 0px) scale(1);
+        }
+      }
+      .animate-in-header-img {
+        animation: animateInHeadImage 6s ease 0.5s 1 normal;
+      }
     </style>
   </head>
   <body class="font-sora">
-    <header class="bg-gradient-to-t from-[#ebe4d6] to-white">
+    <header class="bg-gradient-to-t from-[#ebe4d6] to-white overflow-hidden">
       <!-- Navbar -->
       <nav
         class="max-w-screen-xl mx-auto px-4 md:py-4 flex justify-between items-center md:border-none"
@@ -132,11 +166,11 @@
       </nav>
       <!-- Header Content -->
       <section
-        class="max-w-screen-xl mx-auto px-4 flex flex-col justify-center items-center text-center mt-10"
+        class="max-w-screen-xl mx-auto px-4 flex flex-col justify-center items-center text-center mt-10 overflow-hidden"
       >
         <h1 class="text-3xl md:text-5xl font-bold">
           Freshness
-          <span class="primary-color hover:text-slate-800"
+          <span class="primary-color animate-in-header"
             >You Can <br />
             Count</span
           >
@@ -147,7 +181,7 @@
           pantry staples, we’ve got you covered every day!
         </p>
         <img
-          class="w-11/12 mx-auto"
+          class="w-11/12 mx-auto animate-in-header-img"
           src="./assets/hero-vegetables.png"
           alt=""
         />
@@ -246,8 +280,8 @@
                 >
                 <h2 class="font-bold">Onion</h2>
                 <span class="text-xs md:text-lg"
-                  >1KG<span class="text-green-600 font-bold bottom-4">| </span
-                  >&#2547;60.89</span
+                  >1KG<span class="text-green-600 font-bold bottom-4"> -</span
+                  >&#2547;60</span
                 >
               </div>
             </div>
@@ -270,8 +304,8 @@
                 >
                 <h2 class="font-bold">Tomato</h2>
                 <span class="text-xs md:text-lg"
-                  >1KG<span class="text-green-600 font-bold bottom-4">| </span
-                  >&#2547;40.30</span
+                  >1KG<span class="text-green-600 font-bold bottom-4">-</span
+                  >&#2547;40.5</span
                 >
               </div>
             </div>
@@ -293,7 +327,7 @@
                 >
                 <h2 class="font-bold">Garlic</h2>
                 <span class="text-xs md:text-lg"
-                  >0.5KG<span class="text-green-600 font-bold bottom-4">| </span
+                  >0.5KG<span class="text-green-600 font-bold bottom-4">-</span
                   >&#2547;90</span
                 >
               </div>
@@ -317,8 +351,8 @@
                 >
                 <h2 class="font-bold">Potato</h2>
                 <span class="text-xs md:text-lg"
-                  >1KG<span class="text-green-600 font-bold bottom-4">| </span
-                  >&#2547;30.50</span
+                  >1KG<span class="text-green-600 font-bold bottom-4">-</span
+                  >&#2547;30.5</span
                 >
               </div>
             </div>
@@ -341,7 +375,7 @@
                 >
                 <h2 class="font-bold">Brinjol</h2>
                 <span class="text-xs md:text-lg"
-                  >1KG<span class="text-green-600 font-bold bottom-4">| </span
+                  >1KG<span class="text-green-600 font-bold bottom-4">-</span
                   >&#2547;40.3</span
                 >
               </div>
@@ -365,7 +399,7 @@
                 >
                 <h2 class="font-bold">Mooli</h2>
                 <span class="text-xs md:text-lg"
-                  >1KG<span class="text-green-600 font-bold bottom-4">| </span
+                  >1KG<span class="text-green-600 font-bold bottom-4">-</span
                   >&#2547;50.5</span
                 >
               </div>
@@ -387,9 +421,9 @@
                 <span
                   ><i class="fa-solid fa-star text-yellow-500"></i> 4.4</span
                 >
-                <h2 class="font-bold">Cauliflower</h2>
+                <h2 class="font-bold">Cflower</h2>
                 <span class="text-xs md:text-lg"
-                  >1KG<span class="text-green-600 font-bold bottom-4">| </span
+                  >1KG<span class="text-green-600 font-bold bottom-4">-</span
                   >&#2547;80</span
                 >
               </div>
@@ -412,7 +446,7 @@
                 >
                 <h2 class="font-bold">Ledyfinger</h2>
                 <span class="text-xs md:text-lg"
-                  >1KG<span class="text-green-600 font-bold bottom-4">| </span
+                  >1KG<span class="text-green-600 font-bold bottom-4">-</span
                   >&#2547;70.5</span
                 >
               </div>
@@ -435,7 +469,7 @@
                 >
                 <h2 class="font-bold">Cabbage</h2>
                 <span class="text-xs md:text-lg"
-                  >1KG<span class="text-green-600 font-bold bottom-4">| </span
+                  >1KG<span class="text-green-600 font-bold bottom-4">-</span
                   >&#2547;70</span
                 >
               </div>
@@ -468,8 +502,10 @@
             >
               <h3 class="text-lg font-bold">Set - 1</h3>
               <div class="flex justify-between gap-6 md:gap-10">
-                <div class="text-sm">Poteto <br />Onion <br />Brinjal</div>
-                <div class="text-sm">3KG <br />2KG <br />1KG</div>
+                <div class="text-sm text-left">
+                  Poteto <br />Onion <br />Brinjal
+                </div>
+                <div class="text-sm text-right">3KG <br />2KG <br />1KG</div>
               </div>
               <h3 class="font-bold text-yellow-600">&#2547;200</h3>
               <button
@@ -481,7 +517,7 @@
             <div
               class="bg-white shadow-md p-2 md:p-2 lg:p-4 rounded-md space-y-4 text-center"
             >
-              <h3 class="text-lg font-bold">Set - 1</h3>
+              <h3 class="text-lg font-bold">Set - 2</h3>
               <div class="flex justify-between gap-6 md:gap-10">
                 <div class="text-sm text-left">
                   Garlic <br />Onion <br />Brinjal
@@ -498,7 +534,7 @@
             <div
               class="bg-white shadow-md p-2 md:p-2 lg:p-4 rounded-md space-y-4 text-center"
             >
-              <h3 class="text-lg font-bold">Set - 1</h3>
+              <h3 class="text-lg font-bold">Set - 3</h3>
               <div class="flex justify-between gap-6 md:gap-10">
                 <div class="text-sm text-left">
                   Tometo <br />Onion <br />Muli
@@ -515,7 +551,7 @@
             <div
               class="bg-white shadow-md p-2 md:p-2 lg:p-4 rounded-md space-y-4 text-center"
             >
-              <h3 class="text-lg font-bold">Set - 1</h3>
+              <h3 class="text-lg font-bold">Set - 4</h3>
               <div class="flex justify-between gap-6 md:gap-10">
                 <div class="text-sm text-left">
                   Cucomber <br />Onion <br />Brinjal
@@ -543,12 +579,13 @@
       <h2 class="text-2xl md:text-3xl font-medium text-green-600 mb-8">
         Arrival & Offers
       </h2>
-
       <div class="grid grid-cols-1 md:grid-cols-[auto,40%] gap-4 md:gap-6">
         <div
           class="bg-[#115414] rounded-xl p-5 grid grid-cols-[auto,40%] items-center justify-between gap-2 text-white"
         >
-          <div class="space-y-4 md:space-y-6 mt-5 text-center md:pl-8">
+          <div
+            class="space-y-4 md:space-y-6 mt-5 text-center flex flex-col items-center md:pl-8"
+          >
             <img
               class="w-4/5 md:w-full mx-auto"
               src="./assets/dawat-logo.png"
@@ -575,9 +612,11 @@
         <div
           class="bg-[#2A4D97] rounded-xl p-5 grid grid-cols-[auto,40%] items-center justify-between gap-2 text-white"
         >
-          <div class="space-y-3 md:space-y-6 mt-5 text-center md:pl-8">
+          <div
+            class="space-y-2 md:space-y-4 text-center flex flex-col items-center md:pl-8"
+          >
             <img
-              class="h-4/5 mx-auto"
+              class="md:h-full h-24 mx-auto"
               src="./assets/india-gate-logo.png"
               alt=""
             />
@@ -657,9 +696,9 @@
           <ul
             class="flex flex-col items-center md:items-start justify-start gap-2"
           >
-            <li>Products</li>
-            <li>Secvice</li>
-            <li>Contact Us</li>
+            <li class="hover:text-orange-300">Products</li>
+            <li class="hover:text-orange-300">Secvice</li>
+            <li class="hover:text-orange-300">Contact Us</li>
           </ul>
         </div>
         <div class="text-center space-y-4">
